@@ -14,7 +14,7 @@ describe("Homepage", () => {
     Homepage.buttonGetInTouch.should("have.text", "get in touch");
   });
 
-  it("Should sign-up for newsletter", () => {
+  it("Should sign up for a newsletter", () => {
     Homepage.inputEmail.type(string + '@gmail.com');
     Homepage.checkboxMark.click({ multiple: true });
     Homepage.buttonSignUp.click();

@@ -15,7 +15,7 @@ class Homepage {
     return cy.get('[name="email"]');
   }
   get checkboxMark() {
-    return cy.get('[class="hs-input"]');
+    return cy.get('label [type="checkbox"]');
   }
   get buttonSignUp() {
     return cy.get('.actions [type="submit"]');
@@ -25,6 +25,9 @@ class Homepage {
   }
   get buttonSearch() {
     return cy.contains('Search');
+  }
+  get errorMessage() {
+    return cy.get('[class="hs-main-font-element"]');
   }
 
   getRandomString(length) {
